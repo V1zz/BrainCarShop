@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Models.IdentityModels;
 using Owin;
 
 namespace BrainCarShop
@@ -10,7 +11,7 @@ namespace BrainCarShop
     {
         public void ConfigurationAuth(IAppBuilder app)
         {
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(AppDbContext.Create);
         }
     }
 }

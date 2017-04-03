@@ -8,7 +8,7 @@ using Microsoft.Owin.Security.Cookies;
 
 namespace BrainCarShop
 {
-    public partial class Startup// : ICookieAuthenticationProvider
+    public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
