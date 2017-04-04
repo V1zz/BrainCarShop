@@ -1,9 +1,11 @@
-﻿namespace Repo
+﻿using Models.ViewModels;
+using Repo.Repos;
+
+namespace Repo
 {
     using System.Linq;
     using System.Collections.Generic;
     using Contracts;
-    using BrainCarShop.ViewModels;
 
     public class CatalogService : ICatalogService
     {

@@ -2,12 +2,14 @@
 using System.Web.Mvc;
 using Contracts;
 using Repo;
+using Repo.Repos;
 
 namespace BrainCarShop.Controllers
 {
     public class CatalogController : Controller
     {
         private readonly ICatalogService _catalogService;
+        // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
         private readonly IUnitOfWork _unitOfWork;
 
         public CatalogController()

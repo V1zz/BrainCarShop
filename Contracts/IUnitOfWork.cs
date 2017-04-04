@@ -1,4 +1,4 @@
-﻿using CarShopLayer;
+﻿using Models.Entities;
 
 namespace Contracts
 {

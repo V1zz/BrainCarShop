@@ -1,11 +1,10 @@
 ﻿using System;
-using Contracts;
 using System.Data.Entity;
 using CarShopLayer;
-using BrainCarShop.Entities;
-using Repo.Repos;
+using Contracts;
+using Models.Entities;
 
-namespace Repo
+namespace Repo.Repos
 {
     
 
@@ -37,16 +36,16 @@ namespace Repo
             _dbContext.SaveChanges();
         }
 
-        private bool disposed = false;
+        private bool _disposed;
 
         protected virtual void Dispose(bool disposing)
         {
-            if (this.disposed) return;
+            if (this._disposed) return;
             if (disposing)
             {
                 _dbContext.Dispose();
             }
-            this.disposed = true;
+            this._disposed = true;
         }
         
         public void Dispose()

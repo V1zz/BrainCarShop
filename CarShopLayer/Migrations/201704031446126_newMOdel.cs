@@ -2,6 +2,7 @@ namespace CarShopLayer.Migrations
 {
     using System.Data.Entity.Migrations;
     
+    // ReSharper disable once InconsistentNaming
     public partial class newMOdel : DbMigration
     {
         public override void Up()

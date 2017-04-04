@@ -1,7 +1,7 @@
-namespace CarShopLayer
-{
-    using System;
+using System;
 
+namespace Models.Entities
+{
     public class Price
     {
         public Guid Id { get; set; }

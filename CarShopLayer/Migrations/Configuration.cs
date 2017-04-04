@@ -1,17 +1,15 @@
 namespace CarShopLayer.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CarShopLayer.CarShopContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CarShopContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(CarShopLayer.CarShopContext context)
+        protected override void Seed(CarShopContext context)
         {
             //  This method will be called after migrating to the latest version.
 

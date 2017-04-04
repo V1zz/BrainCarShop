@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201704031446126_newMOdel.Designer.cs">
       <DependentUpon>201704031446126_newMOdel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704042224442_-Pre.cs" />
+    <Compile Include="Migrations\201704042224442_-Pre.Designer.cs">
+      <DependentUpon>201704042224442_-Pre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -85,6 +89,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201704031446126_newMOdel.resx">
       <DependentUpon>201704031446126_newMOdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704042224442_-Pre.resx">
+      <DependentUpon>201704042224442_-Pre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

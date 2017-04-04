@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using CarShopLayer;
 
-namespace BrainCarShop.Entities
+namespace Models.Entities
 {
     public class ModelType
     {
