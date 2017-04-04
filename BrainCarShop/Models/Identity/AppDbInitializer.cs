@@ -11,11 +11,11 @@ namespace BrainCarShop.Models.Identity
     {
         protected override void Seed(AppDbContext context)
         {
-            InitializeIdentityForEF(context);
+            InitializeIdentityForEf(context);
             base.Seed(context);
         }
 
-        public static void InitializeIdentityForEF(AppDbContext context)
+        public static void InitializeIdentityForEf(AppDbContext context)
         {
             var userManager = HttpContext.Current
                                          .GetOwinContext()
@@ -34,7 +34,7 @@ namespace BrainCarShop.Models.Identity
             if (role == null)
             {
                 role = new IdentityRole(roleName);
-                var roleResult = roleManager.Create(role);
+                roleManager.Create(role);
             }
 
             var user = userManager.FindByName(name);
@@ -45,8 +45,8 @@ namespace BrainCarShop.Models.Identity
                     UserName = name,
                     Email = name
                 };
-                var userResult = userManager.Create(user, password);
-                userResult = userManager.SetLockoutEnabled(user.Id, false);
+                userManager.Create(user, password);
+                userManager.SetLockoutEnabled(user.Id, false);
             }
             
             // Add user admin to Role Admin if not already added
