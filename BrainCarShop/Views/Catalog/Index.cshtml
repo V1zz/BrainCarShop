@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Models.ViewModels.CarViewModel>
+﻿@*@model IEnumerable<>
 
 @{
     ViewBag.Title = "Index";
@@ -6,13 +6,13 @@
 
 <h2>Index</h2>
 
-<p>
+@*<p>
     @Html.ActionLink("Create New", "Create", "Catalog")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Brand)
+            @Html.DisplayNameFor(model => model.)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Model)
@@ -40,6 +40,6 @@
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
-    }
+    }*@
 
-</table>
+@*</table>*@

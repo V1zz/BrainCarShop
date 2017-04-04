@@ -3,7 +3,7 @@
     using System.Linq;
     using System.Collections.Generic;
     using Contracts;
-    using Models.ViewModels;
+    using BrainCarShop.ViewModels;
 
     public class CatalogService : ICatalogService
     {

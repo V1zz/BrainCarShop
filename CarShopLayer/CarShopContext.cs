@@ -1,7 +1,7 @@
 namespace CarShopLayer
 {
     using System.Data.Entity;
-    using Models.Entities;
+    using BrainCarShop.Entities;
 
     public sealed class CarShopContext : DbContext
     {

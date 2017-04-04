@@ -2,7 +2,7 @@
 using Contracts;
 using System.Data.Entity;
 using CarShopLayer;
-using Models.Entities;
+using BrainCarShop.Entities;
 using Repo.Repos;
 
 namespace Repo

@@ -2,7 +2,7 @@ namespace CarShopLayer
 {
     using System;
     using System.Collections.Generic;
-    using Models.Entities;
+    using BrainCarShop.Entities;
 
     public class Model
     {

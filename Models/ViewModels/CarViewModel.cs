@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Models.ViewModels
+namespace BrainCarShop.ViewModels
 {
     public class CarViewModel
     {
