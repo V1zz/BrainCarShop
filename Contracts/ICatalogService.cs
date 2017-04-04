@@ -1,8 +1,7 @@
-﻿using Models.ViewModels;
-
-namespace Contracts
+﻿namespace Contracts
 {
     using System.Collections.Generic;
+    using BrainCarShop.ViewModels;
 
     public interface ICatalogService
     {

@@ -1,11 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace Models.Entities
+namespace CarShopLayer
 {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     public class Brand
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Brand()
+        {
+            Models = new HashSet<Model>();
+        }
+
         public Guid Id { get; set; }
 
         [Required]
