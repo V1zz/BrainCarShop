@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainCarShop", "BrainCarShop\BrainCarShop.csproj", "{DEAF1E9A-AA32-4B4F-951A-16BF2E24E59F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84E4D4E0-13A7-40F6-80D0-D4E0AD3FA461} = {84E4D4E0-13A7-40F6-80D0-D4E0AD3FA461}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShopLayer", "CarShopLayer\CarShopLayer.csproj", "{84E4D4E0-13A7-40F6-80D0-D4E0AD3FA461}"
 EndProject
