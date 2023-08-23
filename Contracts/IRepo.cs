@@ -10,9 +10,8 @@
 
         void AddRange(IEnumerable<T> models);
 
-        IEnumerable<T> Find(
-            Expression<Func<T, bool>> predicate,
-            params Expression<Func<T, object>>[] includedProperties);
+        IEnumerable<T> Find( Expression<Func<T, bool>> predicate,
+                             params Expression<Func<T, object>>[] includedProperties );
 
         T Get(object id);
 

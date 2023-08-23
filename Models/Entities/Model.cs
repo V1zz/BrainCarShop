@@ -1,9 +1,9 @@
-namespace CarShopLayer
-{
-    using System;
-    using System.Collections.Generic;
-    using BrainCarShop.Entities;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
+namespace Models.Entities
+{
     public class Model
     {
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,7 +28,7 @@ namespace CarShopLayer
 
         public virtual Brand Brand { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Car> Cars { get; set; }
     }
 }

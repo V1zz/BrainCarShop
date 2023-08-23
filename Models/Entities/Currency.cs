@@ -1,6 +1,6 @@
 using System;
 
-namespace CarShopLayer
+namespace Models.Entities
 {
     public class Currency
     {

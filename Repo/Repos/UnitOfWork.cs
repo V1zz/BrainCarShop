@@ -2,13 +2,11 @@
 using Contracts;
 using System.Data.Entity;
 using CarShopLayer;
-using BrainCarShop.Entities;
+using Models.Entities;
 using Repo.Repos;
 
 namespace Repo
 {
-    
-
     public class UnitOfWork :  IUnitOfWork, IDisposable
     {
         private readonly DbContext _dbContext;

@@ -1,8 +1,8 @@
-namespace CarShopLayer
-{
-    using System;
-    using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 
+namespace Models.Entities
+{
     public class Car
     {
         public Guid Id { get; set; }

@@ -29,7 +29,7 @@ namespace Repo.Repos
         }
         public IEnumerable<T> Find(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includedProperties)
         {
-            IQueryable<T> query = this._dbSet.Where(predicate);
+            var query = _dbSet.Where(predicate);
             if (includedProperties == null)
             {
                 return query.ToList();
@@ -43,10 +43,7 @@ namespace Repo.Repos
             return query.ToList();
         }
 
-        public T Get(object id)
-        {
-            return _dbSet.Find(id);
-        }
+        public T Get(object id) => _dbSet.Find(id);
 
         public void Remove(object id)
         {
